@@ -1,105 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#08783e">
-  <meta name="description" content="Voces de la Vega — propuestas y equipo de 3.º de ESO del IES Las Viñas.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Voces de la Vega, candidatura estudiantil del IES Las Viñas.">
+  <meta name="theme-color" content="#075b35">
   <title>Voces de la Vega | IES Las Viñas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announcement">
-    <span class="announcement-dot"></span>
-    <span>IES LAS VIÑAS</span>
-    <span class="announcement-separator">/</span>
-    <span>ELECCIONES ESCOLARES · 3.º ESO</span>
-  </div>
+  <div class="topline"><span class="topline-dot"></span> IES LAS VIÑAS <span class="topline-sep">/</span> 3.º ESO <span class="topline-sep">/</span> TU VOZ CUENTA</div>
 
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Voces de la Vega, inicio">
-      <img src="assets/logo-voces-de-la-vega.png" alt="Logo Voces de la Vega">
+      <img src="assets/logo-voces-de-la-vega.png" alt="VV — Voces de la Vega">
     </a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
-    <nav class="main-nav" aria-label="Navegación principal">
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
       <a href="#equipo">El equipo</a>
       <a href="#propuestas">Propuestas</a>
-      <a href="#compromiso">Nuestro compromiso</a>
-      <a class="nav-cta" href="#propuestas">Conócenos <span>↗</span></a>
+      <a href="#compromiso">Compromiso</a>
+      <a class="nav-cta" href="#equipo">Conócenos <span>↗</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-photo" aria-hidden="true"></div>
-      <div class="hero-shade"></div>
+      <div class="hero-photo" role="img" aria-label="Álvaro, integrante de Voces de la Vega"></div>
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow light"><span></span> UNA VOZ PARA CADA IDEA</p>
-        <h1>Tu voz.<br><em>Nuestro futuro.</em></h1>
-        <p class="hero-copy">Queremos un instituto más cuidado, participativo e igualitario. Estas son las personas y las propuestas que dan forma a <strong>Voces de la Vega</strong>.</p>
+        <p class="eyebrow light"><span></span> CANDIDATURA ESTUDIANTIL · IES LAS VIÑAS</p>
+        <h1>El instituto<br>también tiene<br><em>tu voz.</em></h1>
+        <p class="hero-copy">Somos <strong>Voces de la Vega</strong>, un equipo de estudiantes con ideas, propuestas y ganas de mejorar nuestro centro. Queremos escucharte y construirlo contigo.</p>
         <div class="hero-actions">
-          <a class="button button-bright" href="#propuestas">Descubre las propuestas <span>→</span></a>
-          <a class="text-link light-link" href="#equipo">Conoce al equipo <span>↓</span></a>
+          <a class="button button-bright" href="#propuestas">Descubre nuestras propuestas <span>→</span></a>
+          <a class="hero-link" href="#equipo">Conoce al equipo <span>↓</span></a>
         </div>
       </div>
-      <div class="hero-stamp">
-        <span class="stamp-top">IES LAS VIÑAS</span>
-        <strong>3.º</strong>
-        <span class="stamp-bottom">ESO · 2026</span>
-      </div>
-      <div class="hero-bottomline">
-        <span>ESCUCHAR</span><i></i><span>PROPONER</span><i></i><span>MEJORAR</span>
-      </div>
+      <div class="hero-seal"><span>VV</span><small>VOCES<br>DE LA VEGA</small></div>
+      <div class="hero-bottomline"><span>ESCUCHAR</span><i></i><span>PROPONER</span><i></i><span>MEJORAR</span></div>
     </section>
 
-    <section class="intro section-wrap" id="compromiso">
-      <div class="intro-mark">VV</div>
-      <div class="intro-copy">
-        <p class="eyebrow"><span></span> VOCES DE LA VEGA</p>
-        <h2>Un instituto mejor<br><em>se construye entre todos.</em></h2>
+    <section class="intro section-wrap">
+      <div class="intro-symbol">VV</div>
+      <div class="intro-heading">
+        <p class="eyebrow"><span></span> NUESTRA CANDIDATURA</p>
+        <h2>Un centro mejor<br>se construye <em>entre todos.</em></h2>
       </div>
-      <p class="intro-text">No venimos solo a prometer. Venimos a escuchar lo que necesita nuestro centro y a trabajar para que las ideas se conviertan en mejoras reales. Queremos que cada estudiante tenga voz.</p>
+      <p class="intro-text">Creemos que cada estudiante tiene algo que aportar. Por eso queremos ser un puente entre el alumnado y el centro: escuchar, representar y convertir las buenas ideas en mejoras reales.</p>
     </section>
 
     <section class="team-section" id="equipo">
       <div class="section-wrap">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow"><span></span> LAS PERSONAS DETRÁS DE LAS IDEAS</p>
-            <h2>Conoce al <em>equipo.</em></h2>
-          </div>
-          <p>Seis compañeros, distintas responsabilidades y un mismo objetivo: representar a todo el alumnado.</p>
+          <div><p class="eyebrow"><span></span> LAS PERSONAS DETRÁS DE LAS IDEAS</p><h2>Conoce al <em>equipo.</em></h2></div>
+          <p>Seis estudiantes, distintas responsabilidades y un mismo objetivo: representar todas las voces.</p>
         </div>
         <div class="team-grid">
-          <article class="member-card member-featured">
-            <div class="member-photo"><img src="assets/presidente.png" alt="Presidente y responsable de deportes" loading="lazy"><span class="member-number">01</span></div>
-            <div class="member-info"><span class="member-role">Presidente</span><h3>Presidencia<br>y deportes</h3><span class="member-line"></span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-photo"><img src="assets/portavoz.png" alt="Portavoz y responsable de educación" loading="lazy"><span class="member-number">02</span></div>
-            <div class="member-info"><span class="member-role">Representación</span><h3>Portavoz<br>y educación</h3><span class="member-line"></span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-photo"><img src="assets/sanidad-deportes.png" alt="Responsable de sanidad y deportes" loading="lazy"><span class="member-number">03</span></div>
-            <div class="member-info"><span class="member-role">Bienestar</span><h3>Sanidad<br>y deportes</h3><span class="member-line"></span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-photo"><img src="assets/igualdad-educacion.png" alt="Responsable de igualdad y educación" loading="lazy"><span class="member-number">04</span></div>
-            <div class="member-info"><span class="member-role">Convivencia</span><h3>Igualdad<br>y educación</h3><span class="member-line"></span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-photo"><img src="assets/secretario-medio-ambiente.png" alt="Secretario y responsable de medio ambiente" loading="lazy"><span class="member-number">05</span></div>
-            <div class="member-info"><span class="member-role">Organización</span><h3>Secretaría<br>y medio ambiente</h3><span class="member-line"></span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-photo"><img src="assets/comunicacion.png" alt="Responsable de comunicación y propaganda" loading="lazy"><span class="member-number">06</span></div>
-            <div class="member-info"><span class="member-role">Comunicación</span><h3>Comunicación<br>y propaganda</h3><span class="member-line"></span></div>
-          </article>
+          <article class="member-card"><button class="member-toggle" type="button" aria-expanded="false">
+            <span class="member-photo"><img src="assets/presidente.png" alt="Presidencia y deportes"></span>
+            <span class="member-info"><span class="member-role">Presidencia y deportes</span><span class="member-name">Álvaro Mora</span><span class="member-line"></span><span class="member-hint">Pulsa para conocer su nombre</span></span>
+          </button></article>
+          <article class="member-card"><button class="member-toggle" type="button" aria-expanded="false">
+            <span class="member-photo"><img src="assets/portavoz.jpeg" alt="Portavoz y educación"></span>
+            <span class="member-info"><span class="member-role">Portavoz y educación</span><span class="member-name">Fernando Sánchez</span><span class="member-line"></span><span class="member-hint">Pulsa para conocer su nombre</span></span>
+          </button></article>
+          <article class="member-card"><button class="member-toggle" type="button" aria-expanded="false">
+            <span class="member-photo"><img src="assets/sanidad-deportes.png" alt="Sanidad y deportes"></span>
+            <span class="member-info"><span class="member-role">Sanidad y deportes</span><span class="member-name">Héctor Tejada</span><span class="member-line"></span><span class="member-hint">Pulsa para conocer su nombre</span></span>
+          </button></article>
+          <article class="member-card"><button class="member-toggle" type="button" aria-expanded="false">
+            <span class="member-photo"><img src="assets/igualdad-educacion.png" alt="Igualdad y educación"></span>
+            <span class="member-info"><span class="member-role">Igualdad y educación</span><span class="member-name">Francisco Javier</span><span class="member-line"></span><span class="member-hint">Pulsa para conocer su nombre</span></span>
+          </button></article>
+          <article class="member-card"><button class="member-toggle" type="button" aria-expanded="false">
+            <span class="member-photo"><img src="assets/secretario-medio-ambiente.png" alt="Secretaría y medio ambiente"></span>
+            <span class="member-info"><span class="member-role">Secretaría y medio ambiente</span><span class="member-name">Juanjo</span><span class="member-line"></span><span class="member-hint">Pulsa para conocer su nombre</span></span>
+          </button></article>
+          <article class="member-card"><button class="member-toggle" type="button" aria-expanded="false">
+            <span class="member-photo"><img src="assets/comunicacion.png" alt="Comunicación y propaganda"></span>
+            <span class="member-info"><span class="member-role">Comunicación y propaganda</span><span class="member-name">Juan Trenado</span><span class="member-line"></span><span class="member-hint">Pulsa para conocer su nombre</span></span>
+          </button></article>
         </div>
       </div>
     </section>
@@ -107,69 +93,35 @@
     <section class="proposals-section" id="propuestas">
       <div class="section-wrap">
         <div class="section-heading proposals-heading">
-          <div>
-            <p class="eyebrow"><span></span> IDEAS QUE QUEREMOS HACER REALIDAD</p>
-            <h2> nuestras <em>propuestas.</em></h2>
-          </div>
-          <p>Seis áreas para mejorar el día a día en el instituto. Explora cada propuesta.</p>
+          <div><p class="eyebrow"><span></span> IDEAS PARA AVANZAR</p><h2>Lo que queremos <em>mejorar.</em></h2></div>
+          <p>Estas son algunas de las áreas en las que queremos trabajar por un instituto más participativo.</p>
         </div>
-
         <div class="proposal-grid">
-          <article class="proposal-card proposal-wide">
-            <div class="proposal-top"><span class="proposal-index">01 / TECNOLOGÍA</span><span class="proposal-icon">⌘</span></div>
-            <h3>Dispositivos<br>electrónicos</h3>
-            <p>Revisar y arreglar los ordenadores cuando sea necesario, comprobando que tengan los programas y las herramientas que se utilizan en clase. También proponemos mejorar su seguridad para evitar instalaciones no autorizadas y usos ajenos al trabajo escolar.</p>
-            <span class="proposal-tag">Aulas mejor preparadas</span>
-          </article>
-          <article class="proposal-card">
-            <div class="proposal-top"><span class="proposal-index">02 / BIENESTAR</span><span class="proposal-icon">＋</span></div>
-            <h3>Sanidad</h3>
-            <p>Mejorar los baños y facilitar gel de manos y papel. Queremos que todo el alumnado disponga del tiempo necesario para utilizar el baño con tranquilidad y que haya compresas gratuitas disponibles.</p>
-            <span class="proposal-tag">Higiene y bienestar</span>
-          </article>
-          <article class="proposal-card proposal-green">
-            <div class="proposal-top"><span class="proposal-index">03 / ENTORNO</span><span class="proposal-icon">✳</span></div>
-            <h3>Medio<br>ambiente</h3>
-            <p>Arreglar y cuidar los jardines, tanto los de la entrada como los que están junto a las calderas. Revisar las plantas y podar los árboles que puedan suponer un riesgo o dificultar el paso por las gradas.</p>
-            <span class="proposal-tag">Un centro más verde</span>
-          </article>
-          <article class="proposal-card">
-            <div class="proposal-top"><span class="proposal-index">04 / APRENDIZAJE</span><span class="proposal-icon">✎</span></div>
-            <h3>Educación</h3>
-            <p>Mandar tareas en una cantidad razonable para que podamos seguir practicando sin sobrecargarnos. Evitar, siempre que sea posible, concentrar varios exámenes en días seguidos y facilitar tiempo suficiente para estudiar.</p>
-            <span class="proposal-tag">Aprender sin saturarnos</span>
-          </article>
-          <article class="proposal-card proposal-dark">
-            <div class="proposal-top"><span class="proposal-index">05 / CONVIVENCIA</span><span class="proposal-icon">◎</span></div>
-            <h3>Igualdad</h3>
-            <p>Tratar a todo el mundo por igual, sin dar más importancia al género. En Educación Física, niños y niñas deben tener la misma oportunidad de obtener la misma nota cuando consiguen los mismos resultados.</p>
-            <span class="proposal-tag">Las mismas oportunidades</span>
-          </article>
-          <article class="proposal-card proposal-wide proposal-sport">
-            <div class="proposal-top"><span class="proposal-index">06 / ACTIVIDAD</span><span class="proposal-icon">⚽</span></div>
-            <h3>Deportes</h3>
-            <p>Organizar más torneos deportivos y reconocer el esfuerzo y la participación, no solo el resultado. Proponemos también un día más de Educación Física y actividades como ir al gimnasio, a la piscina municipal en verano o a esquiar en invierno.</p>
-            <span class="proposal-tag">Más deporte para todos</span>
-          </article>
+          <article class="proposal-card proposal-wide"><div class="proposal-top"><span class="proposal-index">01 / TECNOLOGÍA</span><span class="proposal-icon">⌘</span></div><h3>Tecnología con sentido.</h3><p>Promover un uso responsable y útil de los dispositivos electrónicos en el centro.</p><span class="proposal-tag">Innovación responsable</span></article>
+          <article class="proposal-card proposal-green"><div class="proposal-top"><span class="proposal-index">02 / SALUD</span><span class="proposal-icon">✳</span></div><h3>Bienestar para todos.</h3><p>Fomentar hábitos saludables y el bienestar de todo el alumnado.</p><span class="proposal-tag">Salud y convivencia</span></article>
+          <article class="proposal-card proposal-dark"><div class="proposal-top"><span class="proposal-index">03 / MEDIO AMBIENTE</span><span class="proposal-icon">♧</span></div><h3>Cuidar lo que es nuestro.</h3><p>Cuidar los espacios comunes y reducir los residuos.</p><span class="proposal-tag">Un centro más sostenible</span></article>
+          <article class="proposal-card"><div class="proposal-top"><span class="proposal-index">04 / EDUCACIÓN</span><span class="proposal-icon">✎</span></div><h3>Aprender y participar.</h3><p>Escuchar las necesidades del alumnado y proponer mejoras para aprender mejor.</p><span class="proposal-tag">Tu opinión importa</span></article>
+          <article class="proposal-card proposal-sport"><div class="proposal-top"><span class="proposal-index">05 / IGUALDAD Y DEPORTE</span><span class="proposal-icon">↗</span></div><h3>Un espacio para cada persona.</h3><p>Construir un centro respetuoso, inclusivo y libre de discriminación, impulsando actividades deportivas para todos.</p><span class="proposal-tag">Respeto e inclusión</span></article>
         </div>
       </div>
     </section>
 
-    <section class="closing-banner">
+    <section class="closing-banner" id="compromiso">
       <div class="closing-pattern"></div>
       <div class="closing-content">
-        <p class="eyebrow light"><span></span> VOCES DE LA VEGA · IES LAS VIÑAS</p>
-        <h2>Tu voz cuenta.<br><em>Hagámosla escuchar.</em></h2>
+        <p class="eyebrow light"><span></span> NUESTRO COMPROMISO</p>
+        <h2>Tu voz. Nuestras ideas.<br><em>Un instituto mejor.</em></h2>
+        <p>Queremos escucharte, representarte y trabajar para que el IES Las Viñas sea un lugar mejor para todos.</p>
         <a class="button button-bright" href="#inicio">Volver al inicio <span>↑</span></a>
       </div>
-      <img src="assets/logo-voces-de-la-vega.png" alt="" class="closing-logo" loading="lazy">
+      <img class="closing-logo" src="assets/logo-voces-de-la-vega.png" alt="">
     </section>
   </main>
 
   <footer class="site-footer">
-    <a href="#inicio" class="footer-brand">VOCES <span>DE LA VEGA</span></a>
-    <p>IES Las Viñas · 3.º de ESO · Elecciones escolares 2026</p>
-    <a href="#inicio" class="back-top">Volver arriba ↑</a>
+    <a class="footer-brand" href="#inicio">VOCES <span>DE LA VEGA</span></a>
+    <p>IES Las Viñas · 3.º ESO · Una candidatura hecha por estudiantes.</p>
+    <a class="back-top" href="#inicio">Volver arriba ↑</a>
   </footer>
   <script src="script.js"></script>
 </body>

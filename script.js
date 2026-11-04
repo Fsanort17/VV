@@ -9,5 +9,14 @@ if (toggle && nav) {
   nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
     nav.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Abrir menú');
   }));
 }
+
+// Al pulsar una tarjeta se muestra u oculta el nombre de esa persona.
+document.querySelectorAll('.member-toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!expanded));
+  });
+});
