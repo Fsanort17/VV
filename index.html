@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voces de la Vega | IES Las Viñas</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.personas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.2rem}
+.persona{border:1px solid #d9e5d7;border-radius:16px;padding:1rem;background:#fff;text-align:center}
+.persona button{display:block;width:100%;border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.persona img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;display:block}
+.cargo{display:block;margin-top:.8rem;font-weight:700}
+.nombre{display:none;margin:.7rem 0 0;padding:.65rem;border-radius:10px;background:#eaf3e7;color:#245b35;font-weight:800}
+.persona.abierta .nombre{display:block}
+.contenedor{width:min(1100px,92%);margin-inline:auto}
+.cabecera{padding:1.2rem 0;background:#174b2b;color:white}
+.cabecera a{color:white;text-decoration:none;margin-right:1rem}
+.marca{font-size:1.35rem;font-weight:800}
+.hero{padding:4rem 0;background:#eaf3e7;color:#174b2b}
+.seccion{padding:3rem 0}.seccion h2{color:#174b2b}
+.menu{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1rem}
+.propuestas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.propuesta{padding:1.2rem;border-radius:14px;background:#f1f6ef}
+footer{padding:1.5rem 0;background:#174b2b;color:white;text-align:center}
+</style>
+</head>
+<body>
+<header class="cabecera"><div class="contenedor">
+<a class="marca" href="#inicio">Voces de la Vega</a>
+<nav class="menu" aria-label="Navegación principal"><a href="#equipo">El equipo</a><a href="#propuestas">Propuestas</a><a href="#compromiso">Compromiso</a></nav>
+</div></header>
+<main>
+<!-- Portada sin fotografía del presidente -->
+<section class="hero" id="inicio"><div class="contenedor">
+<p><strong>IES Las Viñas · 3.º ESO</strong></p><h1>Voces de la Vega</h1>
+<p>Un equipo de estudiantes con ideas, propuestas y ganas de mejorar nuestro centro.</p>
+</div></section>
+<section class="seccion contenedor" id="equipo">
+<h2>Conoce al equipo</h2><p>Haz clic en cada persona para descubrir su nombre.</p>
+<div class="personas-grid">
+<article class="persona"><button type="button" aria-expanded="false"><img src="assets/presidente.png" alt="Presidencia y deportes"><span class="cargo">Presidencia y deportes</span><span class="nombre">Álvaro Mora</span></button></article>
+<article class="persona"><button type="button" aria-expanded="false"><img src="assets/portavoz.png" alt="Portavoz y educación"><span class="cargo">Portavoz y educación</span><span class="nombre">Fernando Sánchez</span></button></article>
+<article class="persona"><button type="button" aria-expanded="false"><img src="assets/sanidad-deportes.png" alt="Sanidad y deportes"><span class="cargo">Sanidad y deportes</span><span class="nombre">Héctor Tejada</span></button></article>
+<article class="persona"><button type="button" aria-expanded="false"><img src="assets/igualdad-educacion.png" alt="Igualdad y educación"><span class="cargo">Igualdad y educación</span><span class="nombre">Francisco Javier</span></button></article>
+<article class="persona"><button type="button" aria-expanded="false"><img src="assets/secretario-medio-ambiente.png" alt="Secretaría y medio ambiente"><span class="cargo">Secretaría y medio ambiente</span><span class="nombre">Juanjo</span></button></article>
+<article class="persona"><button type="button" aria-expanded="false"><img src="assets/comunicacion.png" alt="Comunicación y propaganda"><span class="cargo">Comunicación y propaganda</span><span class="nombre">Juan Trenado</span></button></article>
+</div></section>
+<section class="seccion contenedor" id="propuestas"><h2>Nuestras propuestas</h2><div class="propuestas-grid">
+<article class="propuesta"><h3>Tecnología</h3><p>Promover un uso responsable y útil de los dispositivos electrónicos en el centro.</p></article>
+<article class="propuesta"><h3>Salud</h3><p>Fomentar hábitos saludables y el bienestar de todo el alumnado.</p></article>
+<article class="propuesta"><h3>Medio ambiente</h3><p>Cuidar los espacios comunes y reducir los residuos.</p></article>
+<article class="propuesta"><h3>Educación</h3><p>Escuchar las necesidades del alumnado y proponer mejoras para aprender mejor.</p></article>
+<article class="propuesta"><h3>Igualdad</h3><p>Construir un centro respetuoso, inclusivo y libre de discriminación.</p></article>
+<article class="propuesta"><h3>Deporte</h3><p>Impulsar actividades deportivas y la participación de todos.</p></article>
+</div></section>
+<section class="seccion contenedor" id="compromiso"><h2>Nuestro compromiso</h2><p>Queremos representar al alumnado, escuchar todas las voces y trabajar para que el instituto sea un lugar mejor para todos.</p></section>
+</main>
+<footer><div class="contenedor">Voces de la Vega · IES Las Viñas</div></footer>
+<script>
+document.querySelectorAll(".persona button").forEach((boton)=>{boton.addEventListener("click",()=>{
+const tarjeta=boton.closest(".persona");const abierta=tarjeta.classList.toggle("abierta");boton.setAttribute("aria-expanded",String(abierta));
+});});
+</script>
+</body></html>
